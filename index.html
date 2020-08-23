@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Phoenix Analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="pic.jpg">
+        
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="hero text-center">
+      <h1 style="color: white">Analyzing Phoenix</h1>
+      <p style="color: white">“If you can’t measure it, you can’t improve it”- Peter Drucker</p>
+    </div>
+    <div class="container"> <div class="row">
+      <div class="col-md-12 center"><h3 class='center spaceb' style="color: white"> <br>
+      Is having a dedicated analyst role in your company the key to success?<br>
+      Are companies that have analyst roles more successful than ones that do not?<br>  
+      Is data analysis worth investing in for Small Businesses?<br>
+      What kind of impact does data analysis have on growing companies?<br>
+      These are the questions that we seek to gain insight on as we analyze Phoenix...</h3>
+    <br>
+    <br>
+    <br> 
+    </div>
+  <div class='col-md-12'> <h1 style="color: white"> Welcome</h1><h4 class='center spacec kerning' style="color:white">
+  “If you can’t measure it, you can’t improve it” Said Peter Drucker a well respected management consultant known for his contributions to the foundation of the modern business corporation.In today’s business world those words have never been more true.
+  Businesses of every size need tools, methods and people to clean, organize, interact, and extract valuable insights from their data. Having a business that does not analyze their data is akin to “Flying Blind”. Nearly every business can agree that data analysis is important to business success and growth and we believe that this will only become more and more apparent as we continue to create and grow in our technologically connected world.<br><br>
+  </h4></div>
+  <div class='col-md-12'> <h1 style="color: white"> Abstract</h1><h4 class='center spacec kerning' style="color:white">
+    This project provides a look into the company size, revenue, industry and rating of 87 Companies with headquarters in Arizona.<br>We explore these variables and are able to gain a deeper understanding of variety of companies present.<br>We are interested in finding the similarities between companies that have designated analyst positions.<br><br>
+    Web scraping and web research was used to gather information and produce word clouds, Excel & Tableau have been used for calculations and visual analysis. Sentiment Analysis was performed on the business statements using python and pretrained sentiment analysis model called Vader.<br><br>
+    Findings indicate that analyst roles do exist and many times in high volume, for the larger majority of substantial companies ranging from 501-Thousands of employees. Only 67% of mid sized companies (101-500 employees) have designated analyst roles and 21% for small businesses with (1-100 employees). Small companies nearing mid-size, appear to pivot their thinking towards having a designated analyst role and at that stage become 3x more likely to create the designated analyst role within the company.<br><br>
+    Growing a business is a journey and these days there is no autopilot, you have to pay attention to road. A businesses industry, founder, funding and marketing all effect the trajectory of a companies growth. Investing in data is like investing in the beams that hold up your business.The beams are the very structure that hold everything else in place. You can’t go wrong when you have a hand on what is solid.
+<br><br><br></h4></div>
+<div class='col-md-12'> <h1 style="color: white"> Introduction</h1><h4 class='center spacec kerning' style="color:white">
+  We have performed analysis on data surrounding companies that have headquarters in Arizona because these are companies are part of our local communities. These are the companies that grow to employ our new graduates, fathers, mothers, brothers and sisters and that shape the landscape of Arizona’s future.<br><br>
+  We live in a diverse community and businesses here are run by individuals that span many age groups, nationalities, and their companies too, deal and work in a variety of different industries. From the senior assembly line QC inspector at the semiconductor plant to the Segway riding digital media assistant for a local SaaS startup, All businesses seek to build and grow and all employees seek stable and prosperous roles.<br><br>
+  For all businesses the landscape is constantly changing, from the techniques, and technology we use to the audience and market we sell to. What if there was a way to grow faster, more intelligently, with less turnover, higher quality product, greater customer satisfaction and better work life balance?  What if business leaders could less time wondering what was going on in their company and in the world and more time adapting to and empowering themselves with the information not only to meet the needs of the world and community they serve but excel, thrive and prosper?<br><br>
+  Through our analysis we are looking for the impact that a “designated analyst role” has on a companies revenue. We feel that there is a direct connection between large and successful businesses and designated analyst roles. We feel that analyst roles are many times and for whatever reason, underrated, undervalued and haphazardly combined with other roles. Through lack of designated focus, siloed management, or unjust hierarchy, the role of the analyst seems to be denied the true power of its proven impact. Our goal is to share evidence that prompts understanding of why creating designated analyst roles is the oldest but newest “BEST PRACTICE”.
+<br><br><br></h4></div>
+<div class='col-md-12'> <h1 style="color: white">Methods</h1><h4 class='center spacec kerning' style="color:white">
+  Methods used for sampling and data collection include web scraping with python, business listings information from glassdoor.com linkedin.com, business information databases: dnb.com, growjo.com, and listing directories on gregslist.com & azbigmedia.com.
+We collected a sampling of 87 companies. Variables found for these include, company age, company size (determined by number of employees), company annual revenue, company ratings, company location, company industry, and sentiment analysis ratings from business statement.
+<br><br>Data visualizations were created to show the patterns and anomalies in this data. During the “Analyst” role search where we looked at all current company titles, ANY title including the specific word “Analyst” qualified as a YES. For example titles such as Business Analyst, Marketing Analyst, Process Analyst, Agile Analyst, Technical Data Analyst etc.<br><br>
+Limits to the analysis include this data being only valid for the year it was collected, a one year snapshot as far as revenue and the ratings are variable as the information changes over time as it is added to. We were able to find business data as current as 2019 from a combination of sites and online databases.Tableau was used to break down data and identify patterns and distinctions that relate to a companies overall status. 
+  <br><br><br></h4></div>
+<div class='col-md-12'> <h1 style="color: white">Results</h1><h4 class='center spacec kerning' style="color:white">
+  Through the analysis we were able to find a number of interesting correlations between company size, revenue and instance of analyst roles. We can say that overall there is a larger portion of companies that have analyst roles, however it is a firm and prominent feature of the larger companies. We can confidently agree that there is a connection between large scale revenue and the prominence of designated analyst roles. Our conclusion supports the hypothesis and pushes us to further investigate the reasons why companies especially small-mid size ones are reluctant to create designated analyst roles. Some companies boast ¾ of the workforce in sales or executive roles, none which encompass the job of analyzing data of any area within the company. If we were to delve deeper into this subject, we would definitely want to preform some predictive analysis to illustrate the actual rate of revenue increase after the enablement of a dedicated analyst role. We could also explore in more detail the reason why this role is not being adopted earlier on in the business journey,(through online surveys, potentially) and develop a strategy to share our findings with those companies who will benefit. 
+<br><br><br></h4></div>
+<div class='col-md-12'> <h3 style="color: white">More Information and Resources:</h3><h5 class='spacec kerning' style="color:white">
+  <a href="https://www.modernanalyst.com/Resources/Articles/tabid/115/ID/182/Business-Analyst-for-the-Small-Business.aspx">Small businesses don’t think they need analysts but they do.<br></a>
+  <a href=" https://www.batimes.com/articles/why-your-team-needs-business-analysts.html">Why your team needs business analysts.<br></a>
+  <a href="https://moz.com/blog/the-importance-of-marketing-analytics">The importance of having a marketing analytics role at your company.<br></a>
+  <a href="https://smallbiztrends.com/2020/03/marketing-department-roles.html ">Marketing Analytics role listed as an Essential Role for your marketing team.<br></a>
+  <a href="https://callahan.agency/the-case-for-hiring-a-dedicated-marketing-analytics-position/">The case for hiring a dedicated marketing analytics position.<br></a>
+  <a href="https://blog.datumize.com/why-do-you-need-to-hire-a-sales-analyst ">Hire a sales analyst.<br></a>
+  <a href="https://www.batimes.com/articles/why-do-we-need-business-analysts.html ">Why we need business analysts<br></a>
+  <a href="https://blog.microfocus.com/the-importance-of-the-business-analyst-role/ ">The importance of the business analyst role.<br></a>
+  <a href="https://www.meltwater.com/en/blog/why-you-need-a-marketing-analyst-on-your-team ">Why you need a marketing analyst on your team.<br></a>
+  <a href="https://www.indeed.com/career-advice/starting-new-job/business-roles ">Business analyst is an essential operational role.<br></a>
+  <a href="https://www.iiba.org/iiba-analyst-catalyst-blogs/3-reasons-why-companies-are-hiring-business-analysts/ ">3 Reasons companies are hiring business analysts.<br></a>
+  <a href="https://www.cio.com/article/2436638/project-management-what-do-business-analysts-actually-do-for-software-implementation-projects.html ">Why you need a business analyst.<br></a>
+<br><br><br></h5></div>
+<div class="col-md-12"><div class="center">
+<div class='tableauPlaceholder' id='viz1597269099834' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ph&#47;PhoenixAnalysis&#47;PhoenixAnalysis&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='PhoenixAnalysis&#47;PhoenixAnalysis' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ph&#47;PhoenixAnalysis&#47;PhoenixAnalysis&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object> 
+    </div> <script type='text/javascript'>var divElement = document.getElementById('viz1597269099834');                    var vizElement = divElement.getElementsByTagName('object')[0];vizElement.style.width='1016px';vizElement.style.height='991px';var scriptElement = document.createElement('script');scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';vizElement.parentNode.insertBefore(scriptElement, vizElement);</script></div></div></div></div>
+
+<div class='col-md-12'> <h1 style="color: white"><br><br>Word Clouds</h1><h4 class='center spacec kerning' style="color:white">
+  To get an idea of the values for the companies we were looking at, what better way to do so than a word cloud?<br>
+  We took the mission statement from the company's website, and used Beautiful Soup to scrape the mission statement to only show the text. Sometimes the actual websites were unable to be scraped, but we could find the same statement in other places, such as "indeed.com". The mission statement was usually in the 'paragraph' element, and from there we cleaned it up to only show the sentences. Then, we used matplotlib to create the word cloud, and used a package named "STOPWORDS" to remove the filler words (such as "the", "it", etc). The word clouds shown below were customized to use colors from the company logo.
+  <br><br><br></h4></div>
+  
+
+  <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+        <li data-target="#myCarousel" data-slide-to="7"></li>
+        <li data-target="#myCarousel" data-slide-to="8"></li>
+        <li data-target="#myCarousel" data-slide-to="9"></li>
+        <li data-target="#myCarousel" data-slide-to="10"></li>
+        <li data-target="#myCarousel" data-slide-to="11"></li>
+        <li data-target="#myCarousel" data-slide-to="12"></li>
+        <li data-target="#myCarousel" data-slide-to="13"></li>
+        <li data-target="#myCarousel" data-slide-to="14"></li>
+        <li data-target="#myCarousel" data-slide-to="15"></li>
+        <li data-target="#myCarousel" data-slide-to="16"></li>
+        <li data-target="#myCarousel" data-slide-to="17"></li>
+        <li data-target="#myCarousel" data-slide-to="18"></li>
+        <li data-target="#myCarousel" data-slide-to="19"></li>
+        <li data-target="#myCarousel" data-slide-to="20"></li>
+        <li data-target="#myCarousel" data-slide-to="21"></li>
+        <li data-target="#myCarousel" data-slide-to="22"></li>
+        <li data-target="#myCarousel" data-slide-to="23"></li>
+        <li data-target="#myCarousel" data-slide-to="24"></li>
+        <li data-target="#myCarousel" data-slide-to="25"></li>
+        <li data-target="#myCarousel" data-slide-to="26"></li>
+        <li data-target="#myCarousel" data-slide-to="27"></li>
+        <li data-target="#myCarousel" data-slide-to="28"></li>
+        <li data-target="#myCarousel" data-slide-to="29"></li>
+        <li data-target="#myCarousel" data-slide-to="30"></li>
+        <li data-target="#myCarousel" data-slide-to="31"></li>
+        <li data-target="#myCarousel" data-slide-to="32"></li>
+        <li data-target="#myCarousel" data-slide-to="33"></li>
+        <li data-target="#myCarousel" data-slide-to="34"></li>
+        <li data-target="#myCarousel" data-slide-to="35"></li>
+        <li data-target="#myCarousel" data-slide-to="36"></li>
+        <li data-target="#myCarousel" data-slide-to="37"></li>
+        <li data-target="#myCarousel" data-slide-to="38"></li>
+        <li data-target="#myCarousel" data-slide-to="39"></li>
+        <li data-target="#myCarousel" data-slide-to="40"></li>
+        <li data-target="#myCarousel" data-slide-to="41"></li>
+        <li data-target="#myCarousel" data-slide-to="42"></li>
+        <li data-target="#myCarousel" data-slide-to="43"></li>
+        <li data-target="#myCarousel" data-slide-to="44"></li>
+        <li data-target="#myCarousel" data-slide-to="45"></li>
+        <li data-target="#myCarousel" data-slide-to="46"></li>
+        <li data-target="#myCarousel" data-slide-to="47"></li>
+        <li data-target="#myCarousel" data-slide-to="48"></li>
+        <li data-target="#myCarousel" data-slide-to="49"></li>
+        <li data-target="#myCarousel" data-slide-to="50"></li>
+        <li data-target="#myCarousel" data-slide-to="51"></li>
+        <li data-target="#myCarousel" data-slide-to="52"></li>
+        <li data-target="#myCarousel" data-slide-to="53"></li>
+        <li data-target="#myCarousel" data-slide-to="54"></li>
+        </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="Pictures/allianceresidential.png" alt="Alliance" style="width:100%;">
+        </div>
+  
+        <div class="item">
+          <img src="Pictures/anju.png" alt="Anju" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/arion.png" alt="Arion" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/assistek.png" alt="Assistek" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/audioeye.png" alt="Audioeye" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/axosoft.png" alt="Axosoft" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/axway.png" alt="Axway" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/baseslayer.png" alt="Baseslayer" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/bashas.png" alt="Bashas" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/benchmark.png" alt="Benchmark" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/blueyonder.png" alt="BlueYonder" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/cableone.png" alt="Cable One" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/campuslogic.png" alt="Campus Logic" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/carvana.png" alt="Carvana" style="width:100%;">
+        </div>
+      
+       
+        <div class="item">
+          <img src="Pictures/clearvoice.png" alt="Clearvoice" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/compugroupmed.png" alt="Compugroup" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/dashcoregroup.png" alt="Dash Core Group" style="width:100%;">
+        </div>
+      
+        
+        <div class="item">
+          <img src="Pictures/digitalairstrike.png" alt="Digital Air Strike" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/drivetime.png" alt="DriveTime" style="width:100%;">
+        </div>
+
+              
+        <div class="item">
+          <img src="Pictures/emergetech.png" alt="Emergetech" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/enghouse.png" alt="Enghouse" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/exos.png" alt="Exos" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/fender.png" alt="Fender" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/firstsolar.png" alt="First Solar" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/foresight.png" alt="Foresight" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/Freeport-McMoRan.png" alt="Freeport-McMoran" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/globaltranz.png" alt="GlobalTranz" style="width:100%;">
+        </div>
+
+             
+        <div class="item">
+          <img src="Pictures/godaddy.png" alt="GoDaddy" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/inksoft.png" alt="Inksoft" style="width:100%;">
+        </div>
+      
+        
+        <div class="item">
+          <img src="Pictures/keap.png" alt="Keap" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/knighttransportation.png" alt="Knight Transportation" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/konagrill.png" alt="Kona Grill" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/lesliespool.png" alt="Leslie's Pool" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/massageenvy.png" alt="Massage Envy" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/mesaairlines.png" alt="Mesa Air" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/mistercarwash.png" alt="Mister Carwash" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/mobilemini.png" alt="Mobile Mini" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/mytek.png" alt="Mytek" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/nextiva.png" alt="Nextiva" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/offerpad.png" alt="Offerpad" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/onsemiconductor.png" alt="On Semiconductor" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/petsmart.png" alt="Petsmart" style="width:100%;">
+        </div>
+      
+             
+        <div class="item">
+          <img src="Pictures/purechat.png" alt="Pure Chat" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/qwick.png" alt="Qwick" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/rallyup.png" alt="Rallyup" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/revolutionparts.png" alt="Revolution Parts" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/shamrockfoods.png" alt="Shamrock Foods" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/shiftx.png" alt="ShiftX" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/sitelock.png" alt="Sitelock" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/skytouchtech.png" alt="Skytouch" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/solidstate.png" alt="Solid State" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="Pictures/sprouts.png" alt="Sprouts" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="Pictures/tpicomposites.png" alt="TPI Composites" style="width:100%;">
+        </div>
+
+              
+        <div class="item">
+          <img src="Pictures/virtuoussoftware.png" alt="Virtuous Software" style="width:100%;">
+        </div>
+
+      </div>
+  <div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div></div>
+  <div class='col-md-12'> <h1 style="color: white"><br><br>Perception</h1><h4 class='center spacec kerning' style="color:white">
+    For many companies, perspective can be very important. Here we will look at how current and previous employees view the company, along with how they are viewed by their statement.<br>In the first set of charts, you can see the average rating on Glassdoor.com for referrals. We broke this in to two categories: the higher rated companies versus the lower rated companies. In the next chart, we show the average rating for each company on a scale from 1 to 5. This information was also provided from Glassdoor.com.
+    <br><br>We wanted to dig a little deeper, so we created a chart that shows how a company is perceived by their statement. Using a sentiment analysis model called VADER and python, we were able to determine whether their statement was generally positive, neutral, or negative. All of the responses came back more positive than negative, however some companies had a more positive or negative  rating than other companies.
+  <br><br><br></h4></div>
+  <div class="col-md-12"><div class="center">
+    <div class='tableauPlaceholder' id='viz1597268462441' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pe&#47;Perception_15972681047630&#47;Perception&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Perception_15972681047630&#47;Perception' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pe&#47;Perception_15972681047630&#47;Perception&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>var divElement = document.getElementById('viz1597268462441');var vizElement = divElement.getElementsByTagName('object')[0];vizElement.style.width='1016px';vizElement.style.height='991px';var scriptElement = document.createElement('script');scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+
+    </div></div>
+    <footer class="footer">
+      <span class="bottom">Phoneix Analysis presentation by: Rachel Groves & Julie Carlene</span>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data.js"></script>
+</body>
+
+</html>
